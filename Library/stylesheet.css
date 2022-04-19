@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    border: solid;
+    border-color: blueviolet;
+    text-align: center;
+    margin: 0 0 1em 0;
+}
+section{
+    width: 70%;
+    height: fit-content;
+    margin: 0 auto;
+    border: solid;
+    border-color: aquamarine;
+}
+
+.text-div{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+
+}
+.text-input{
+    margin: 0.3em;
+}
+
+.radio-div{
+    display: flex;
+    flex-direction: row;
+    padding: 0.2em 1em 1em 1.3em;
+    justify-content: space-evenly;
+}
+.radioBtn{
+   padding: 1em;
+}
+
+.buttons-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10em 1em 10em;
+    
+}
+
+button{
+    margin:0.2em ;
+    
+}
