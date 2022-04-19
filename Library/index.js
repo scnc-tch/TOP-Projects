@@ -51,7 +51,7 @@ const addVisual = (book) => {
         deleteB.dataset.key  = `${i}`
         deleteB.className = "deleteBtn"
         deleteB.innerHTML = "Delete";
-    }
+    };
         div.appendChild(titleP);
         div.appendChild(authorP);
         div.appendChild(deleteB)
@@ -62,6 +62,5 @@ const addVisual = (book) => {
            let i = deleteB.dataset;
                 library.splice(i,1)
                 div.remove()
-                console.log(library)
-        })
-}
+        });
+};
