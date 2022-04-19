@@ -11,24 +11,29 @@
               <h1>Library</h1>
           </div>
         </header>
-        <section class="section">
+        <section class="input-section">
 
             <div class="text-div">
-                <input class="book-title text-input" type="text" placeholder="Book title">
-                <input class="book-author text-input" type="text" placeholder="Author of book">
+                <input id="titleInput" class="book-title text-input" type="text" placeholder="Book title">
+                <input id="authorInput" class="book-author text-input" type="text" placeholder="Author of book">
             </div>
 
             
             <div class="radio-div">
                 <label for="radio">Have you read the book?</label>
-                <input class="radioBtn" id="radio" type="radio">yes</label>
-                <input class="radioBtn" id="radio" type="radio">no</label>
+                <input type="radio" id="radioYes" class="radio"  name="choice"  value="yes" autocomplete="off">
+                <label for="radioYes">Yes</label>
+                <input type="radio" id="radioNo" class="radio"  name="choice"  value="no" autocomplete="off">
+                <label for="radioNo">No</label>
             </div>
 
             <div class="buttons-div">
                 <button id="addBtn" class="addBtn" type="submit">ADD BOOK</button>
-                <button class="showBtn" type="button">Library</button>
+                <button class="save" type="button">Save</button>
             </div>
+        </section>
+        <section  id="library" class="library-section">
+
 
         </section>
         <footer>
