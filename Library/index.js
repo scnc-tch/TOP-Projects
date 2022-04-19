@@ -23,8 +23,14 @@ function makeBook(){
 addBookBtn.addEventListener("click", () => {
     const title = titleInput.value;
     const author = authorInput.value;
+    if(title ===""){
+        alert("What about the title?")
+    } else if (author === ''){
+        alert("Who wrote this book?")
+    } else {
     const book = Object.create(makeBook, { title: {value: title}, author: {value: author}})
     addBookToLibrary(book)
+    }
 
 });
 

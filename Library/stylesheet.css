@@ -7,23 +7,36 @@
 }
 
 :root{
-    --box-shadow: 0px 0px 45px -12px rgba(0,0,0,0.77);
+    --box-shadow: 0px 0px 45px -12px rgba(0,0,0,0.5);
+    --font-general: 'PT Serif', serif;;
 }
 
 header{
-    border: solid;
-    border-color: blueviolet;
+   background-color: rgba(213,229,242,0.4);
     text-align: center;
-    margin: 0 0 1em 0;
+    margin-bottom: 1em;
+    padding: 1em;
+
 }
 
+h1{
+    margin: 1em;
+    font-family: var(--font-general);
+    text-align: center;
+    text-shadow: var(--box-shadow);
+}
 
+body{
+    background-color: white;
+}
 .input-section{
     width: 80%;
-    height: fit-content;
     margin: 0 auto;
-    background-color: darksalmon;
+    background-color: rgba(51,153,255,0.8);
+    border: solid;
+    border-color: rgba(217,217,217,0.2);
     box-shadow: var(--box-shadow);
+    font-family: var(--font-general);
 }
 
 .text-div{
@@ -52,39 +65,39 @@ header{
     flex-direction: column;
     justify-content: center;
     padding: 0 10em 1em 10em;
-    
 }
 
-button{
-    margin:0.2em ;
-    
+.addBtn{
+    padding: 1em;
+    margin: 0 auto;
+    background-color: rgba(51,51,153,0.5);
+    border-radius: 10%;
 }
 
 .library-section{
-    display: none;
-    width: 80%;
     margin: 0 auto;
+    max-width: 95%;
     margin-top: 2em;
     margin-bottom: 4em;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5em;
-    background-image: url("silver_bg.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: var(--box-shadow);
     text-align: center;
     justify-content: center;
-    padding: 1em;
+    font-family: var(--font-general);
 }
 .container{
     max-width: max-content;
     text-align: center;
-    padding: 0.3em;
-    border: solid;
-    border-color: aliceblue;
+    margin: 0.5em;
+    padding: 0.7em;
+    box-shadow: var(--box-shadow);
 }
 
 .deleteBtn{
-    margin-top: 0.3em;
+    margin: 0.7em;
+    padding: 0.3em;
+    font-size: 0.7rem;
+    background-color: rgba(238,73,48,0.3);
+    border-radius: 10%;
 }
