@@ -30,9 +30,14 @@ addBookBtn.addEventListener("click", () => {
     } else {
     const book = Object.create(makeBook, { title: {value: title}, author: {value: author}})
     addBookToLibrary(book)
+    clearInputs()
     }
-
 });
+
+let clearInputs = () => {
+    titleInput.value ="";
+    authorInput.value='';
+}
 
 let  addBookToLibrary = (book) => {
     library.push(book)
