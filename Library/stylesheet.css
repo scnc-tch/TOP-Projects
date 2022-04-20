@@ -7,7 +7,7 @@
 }
 
 :root{
-    --box-shadow: 0px 0px 45px -12px rgba(0,0,0,0.5);
+    --box-shadow: 0px 0px 45px -12px rgba(0,0,0,0.3);
     --font-general: 'PT Serif', serif;;
 }
 
@@ -29,6 +29,7 @@ h1{
 body{
     background-color: white;
 }
+
 .input-section{
     width: 80%;
     margin: 0 auto;
@@ -76,7 +77,7 @@ body{
 
 .library-section{
     margin: 0 auto;
-    max-width: 95%;
+    max-width: 84%;
     margin-top: 2em;
     margin-bottom: 4em;
     display: flex;
