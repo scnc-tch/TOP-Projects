@@ -7,8 +7,7 @@ const seeLib = document.getElementById("seeLibBtn");
 
 const titleInput = document.getElementById("titleInput");
 const authorInput = document.getElementById("authorInput");
-const radioYes = document.getElementById("radioYes");
-const radioNo = document.getElementById("radioNo");
+const radioInput = document.querySelectorAll(".radio");
 
 const librarySection = document.getElementById("library")
 
@@ -18,17 +17,23 @@ function makeBook(){
     this.author = author
 };
 
+makeBook.prototype.currentStatus = function(){
+    this.current = current;
+
+}
+
 //Functions
 
 addBookBtn.addEventListener("click", () => {
     const title = titleInput.value;
     const author = authorInput.value;
+    const current = radioInput.value
     if(title ===""){
         alert("What about the title?")
     } else if (author === ''){
         alert("Who wrote this book?")
     } else {
-    const book = Object.create(makeBook, { title: {value: title}, author: {value: author}})
+    const book = Object.create(makeBook, { title: {value: title}, author: {value: author}, current: {value:current}})
     addBookToLibrary(book)
     clearInputs()
     }
@@ -50,6 +55,7 @@ const addVisual = (book) => {
     const titleP = document.createElement("p");
     const authorP = document.createElement('p');
     const deleteB = document.createElement("button")
+    const currentBtn = document.createElement("button")
     for(i = 0; i < library.length; i++){
         div.id = "container";
         div.className = "container";
@@ -62,10 +68,14 @@ const addVisual = (book) => {
         deleteB.dataset.key  = `${i}`
         deleteB.className = "deleteBtn"
         deleteB.innerHTML = "Delete";
+        currentBtn.type = "button"
+        currentBtn.id = "current"
+        currentBtn.innerHTML = "Read or Not"
     };
         div.appendChild(titleP);
         div.appendChild(authorP);
         div.appendChild(deleteB)
+        div.appendChild(currentBtn)
         librarySection.appendChild(div);
 
         //Delete Btn functionality
@@ -74,4 +84,12 @@ const addVisual = (book) => {
                 library.splice(i,1)
                 div.remove()
         });
+        //Toggle Btn Functionality
+        currentBtn.addEventListener("click", () =>{
+            if(book.current === "yes"){
+                currentBtn.className = "red"
+            } else if (book.current === "no"){
+                currentBtn.className = "green"
+            }
+        })
 };

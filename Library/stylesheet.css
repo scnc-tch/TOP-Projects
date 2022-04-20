@@ -24,6 +24,7 @@ h1{
     font-family: var(--font-general);
     text-align: center;
     text-shadow: var(--box-shadow);
+    text-decoration: underline;
 }
 
 body{
@@ -101,4 +102,12 @@ body{
     font-size: 0.7rem;
     background-color: rgba(238,73,48,0.3);
     border-radius: 10%;
+}
+
+.green{
+    background-color: greenyellow;
+}
+
+.red{
+    background-color: red;
 }
