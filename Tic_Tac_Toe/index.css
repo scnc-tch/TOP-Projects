@@ -1,0 +1,74 @@
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-general: 'PT Serif', serif;
+    --font-size-general: 3rem;
+}
+
+.game{
+    margin: 0 auto;
+    margin-top: 3em;
+    display: grid;
+    border: solid;
+    border-color: blue;
+    max-width: 60%;
+    height:500px;
+    grid-template-areas: 
+    "LT RT" 
+    "LB RB";
+    padding: 1em;
+    font-size: var(--font-size-general);
+}
+
+.box-lt{
+    grid-area: "LT";
+    border: solid;
+    border-color: green ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+    font-size: var(--font-size-general);
+    
+    
+}
+
+.box-rt{
+    grid-area: "RT";
+    border: solid;
+    border-color: green ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+    font-size: var(--font-size-general);
+}
+
+.box-lb{
+    grid-area: "LB";
+    border: solid;
+    border-color: green ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+    font-size: var(--font-size-general);
+}
+
+.box-rb{
+    grid-area: "RB";
+    border: solid;
+    border-color: green ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+    font-size: var(--font-size-general);
+}
