@@ -21,54 +21,110 @@
     max-width: 60%;
     height:500px;
     grid-template-areas: 
-    "LT RT" 
-    "LB RB";
+    "lt mt rt"
+    "lm mm rm" 
+    "lb mb rb";
     padding: 1em;
     font-size: var(--font-size-general);
 }
 
 .box-lt{
-    grid-area: "LT";
+    grid-area: "lt";
     border: solid;
     border-color: green ;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.5em;
+    margin: 0.1em;
     font-size: var(--font-size-general);
     
     
 }
 
-.box-rt{
-    grid-area: "RT";
+.box-mt{
+    grid-area: "mt";
     border: solid;
     border-color: green ;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.5em;
+    margin: 0.1em;
+    font-size: var(--font-size-general);
+}
+
+.box-rt{
+    grid-area: "rt";
+    border: solid;
+    border-color: green ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1em;
+    font-size: var(--font-size-general);
+}
+
+.box-lm{
+    grid-area: "lm";
+    border: solid;
+    border-color: green ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1em;
+    font-size: var(--font-size-general);
+}
+
+.box-mm{
+    grid-area: "rt";
+    border: solid;
+    border-color: green ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1em;
+    font-size: var(--font-size-general);
+}
+
+.box-rm{
+    grid-area: "lm";
+    border: solid;
+    border-color: green ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1em;
     font-size: var(--font-size-general);
 }
 
 .box-lb{
-    grid-area: "LB";
+    grid-area: "lm";
     border: solid;
     border-color: green ;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.5em;
+    margin: 0.1em;
+    font-size: var(--font-size-general);
+}
+
+.box-mb{
+    grid-area: "rt";
+    border: solid;
+    border-color: green ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1em;
     font-size: var(--font-size-general);
 }
 
 .box-rb{
-    grid-area: "RB";
+    grid-area: "lm";
     border: solid;
     border-color: green ;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.5em;
+    margin: 0.1em;
     font-size: var(--font-size-general);
 }
